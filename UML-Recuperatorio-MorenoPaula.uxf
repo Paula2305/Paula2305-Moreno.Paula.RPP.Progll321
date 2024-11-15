@@ -1,0 +1,59 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>560</x><y>260</y><w>210</w><h>190</h></coordinates><panel_attributes>/Animal/
+--
+- nombre : String
+- edad : int
+
+--
++ Animal(String, int)
++ getNombre() : String
++ equals(Object) : boolean
++ hascode() : int
++ toString() : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>500</y><w>290</w><h>190</h></coordinates><panel_attributes>Mamifero
+--
+- peso : double
+
+--
++ Mamifero(String, int,double,Dieta)
++ vacunar() : void
++ toString() : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>500</y><w>300</w><h>190</h></coordinates><panel_attributes>Ave
+--
+- envergaduraAlas : double
+
+--
++ Ave(String,int, double)
++ vacunar() : void
++ toString() : String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>880</x><y>500</y><w>270</w><h>190</h></coordinates><panel_attributes>Reptil
+--
+-  tipoEscama : String
+- regulacionTemperatura : String
+
+--
++ Reptil(String,int,String,String)
++ toString() : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>360</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Dieta
+--
+__+ HERBIVORO__
+__+ CARNIVORO__
+__+ OMNIVORO__
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>470</y><w>160</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+m1= 1
+- dieta</panel_attributes><additional_attributes>10;10;140;130</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>440</y><w>270</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>250;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>440</y><w>70</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;50;60</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>440</y><w>330</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;310;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>250</y><w>210</w><h>130</h></coordinates><panel_attributes>Zoologico
+--
+
+--
++ Zoologico()
++ agregarAnimal(Animal) : void
++ mostrarAnimales() : void
++ vacunarAnimales() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>760</x><y>330</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1= *
+- animales</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>760</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Vacunable
+--
++ vacunar() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1110</x><y>350</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>680</y><w>130</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>110;150;10;150;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>680</y><w>130</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;140;110;140;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1180</x><y>250</y><w>210</w><h>140</h></coordinates><panel_attributes>AnimalRepetidoException
+--
+__- MESSAGE__
+
+--
++ AnimalRepetidoException()
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
